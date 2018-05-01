@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>JavaScript Calculator</title>
-  <meta name="description" content="Create a functioning calculator using JavaScript only. Challenge part of the front-end curriculum @freecodecamp, in the line of 'Advanced Front-End Web Development Projects'">
+  <meta name="description" content="Create a functioning calculator using JavaScript only. Challenge part of the front-end curriculum @freecodecamp, in the line of 'Advanced Front-End Web Development Projects'.">
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
+  
   <!-- in a all-wrapping container include a wrapping div of class .calculator 
   the former is used to position the content, while the latter focuses on the grid of content -->
   <div class="container">
 
     <div class="calculator">
-
       <!-- 
         calculator with a grid for
         .1 the display of the calculator (top of the calculator, spanning the entire width)
@@ -25,7 +25,10 @@
       -->
       <div class="display">
         <p class="display__text">
-            <!-- paragraph to be populated with text -->
+            <!-- paragraph to be populated with current digit/operator -->
+        </p>
+        <p class="display__chain">
+            <!-- paragraph to be populated with past digits/ operators -->
         </p>
       </div>
 
@@ -33,25 +36,25 @@
       <button data-value="/">/</button>
       <button data-value="*">*</button>
       <button data-value="-">-</button>
-      <button data-value="no-function"></button>
+      <button data-value="+">+</button>
       
       <button data-value="7">7</button>
       <button data-value="8">8</button>
       <button data-value="9">9</button>
-      <button data-value="+">+</button>
       
       <button data-value="4">4</button>
       <button data-value="5">5</button>
       <button data-value="6">6</button>
+      <button data-value="=">=</button>
       
       <button data-value="1">1</button>
       <button data-value="2">2</button>
       <button data-value="3">3</button>
-      <button data-value="=">=</button>
 
       <button data-value="ac">ac</button>
       <button data-value="ec">ec</button>
       <button data-value="0">0</button>
+      <button data-value=".">.</button>
       
     </div> <!-- close .calculator div -->
   </div> <!-- close .container div -->
