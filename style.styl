@@ -42,9 +42,18 @@ body
         display flex 
         justify-content flex-end
         align-items center
-
-        p 
+        position relative
+        
+        // style paragraphs according to their function, which is display current text/ past operations
+        p.display__text
             font-size 2rem
+        p.display__chain
+            font-size 1.2rem
+            position absolute
+            bottom 2px 
+            color rgba(color-background, 65%)
+            font-style italic
+           
 
     button 
         // for the buttons 100% of width and height assures the buttons are squares of 62px
@@ -73,8 +82,8 @@ body
 
         &[data-value="+"]
             // for the plus and equal operators, which are the most prominent buttons of the simplified calculator, make them span one column, but two rows 
-            grid-row 3/5
+            grid-row 2/4
             grid-column 4/5            
         &[data-value="="]
-            grid-row 5/7
+            grid-row 4/6
             grid-column 4/5
